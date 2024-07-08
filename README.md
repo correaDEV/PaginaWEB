@@ -1,5 +1,7 @@
 # PaginaWEB
-Exercico da academia de java
+
+![image](https://github.com/correaDEV/PaginaWEB/assets/156840280/248a67b5-886e-4e28-abfc-1e4f3b619809)
+
 
 <h1>Website Description</h1>
 
