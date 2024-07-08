@@ -1,0 +1,162 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f2f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    overflow: hidden;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 1));
+    color: rgb(247, 247, 247);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header__content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    background: rgb(253, 253, 253);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button {
+    background: #949c9e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #020202;
+}
+
+/* Estilos para o menu de navegação */
+nav {
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo img {
+    max-width: 150px;
+}
+
+.nav__menu__btn {
+    display: none;
+}
+
+.nav__links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+    color: #667eea;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer__socials {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer__socials a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer__socials a:hover {
+    color: #667eea;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav__links {
+        display: none;
+    }
+
+    .nav__menu__btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav__links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}
